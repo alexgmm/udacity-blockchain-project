@@ -48,6 +48,7 @@ contract CollateralizedLoan {
         Loan storage loan = loans[loanId];
 
         require(loan.borrower != msg.sender, "You can't lend to yourself");
+        require(msg.value == loan.loanAmount, "The sent amount must be equal to the requested loan amount");
 
         loan.isFunded = true;
         loan.lender = msg.sender;
