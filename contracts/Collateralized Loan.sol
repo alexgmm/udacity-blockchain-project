@@ -44,7 +44,7 @@ contract CollateralizedLoan {
         emit LoanRequested(msg.sender, loanAmount, _interestRate, block.timestamp + _duration);
     }
 
-    function fundLoan(uint loanId) external loanExists(loanId) loanNotFunded(loanId) {
+    function fundLoan(uint loanId) external payable loanExists(loanId) loanNotFunded(loanId) {
         Loan storage loan = loans[loanId];
 
         require(loan.borrower != msg.sender, "You can't lend to yourself");
