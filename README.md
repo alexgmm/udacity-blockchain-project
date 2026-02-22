@@ -16,4 +16,4 @@ npx hardhat run scripts/interact.js --network sepolia-testnet
 ## Project Rubric Requirements
 - ✅ Contract implements the required methods
 - ✅ Tests for at least 2 use cases
-- ✅ Contract deployed to the testnet ([etherscan link](https://sepolia.etherscan.io/address/0xD61cF9c3ebfc77d1e13568fa3928C3da3e100a45))
+- ✅ Contract deployed to the testnet ([etherscan link](https://sepolia.etherscan.io/address/0x915Fd761d5482Cd50589948e08369C5b8523DF18))
